@@ -2,26 +2,6 @@ import { El } from "../../utils/El.js";
 
 export function Table(){
 
-    // async function getTasks() {
-    //     try {
-    //       const res = await fetch('https://6763fe4c17ec5852caeac112.mockapi.io/tasks');
-    //       if (!res.ok) {
-    //         throw new Error('connection is failed');
-    //       }
-    //       const result = await res.json();
-    //       return result;
-    //     } catch (err) {
-    //       console.log(err);
-    //     }
-    // }
-
-    // const data = [] 
-    // getTasks()
-    //     .then(response =>{
-    //         data = response;
-
-    //     })
-
     return El({
         element : 'table',
         className : 'w-full border-collapse',
@@ -68,12 +48,8 @@ export function Table(){
             El({
                 element : 'tbody',
                 className :'text-center',
-                children : [
-                    El({
-                        element : 'tr',
-                        children : []
-                    })
-                ]
+                id: "tbody",
+                children : []
             })
         ]
     })
